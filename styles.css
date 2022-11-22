@@ -1,45 +1,49 @@
 *{
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box;  /*tirar */
 }
 
 /* Body and main --------------------------------- */
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url("images/bg-intro-desktop.png");
-    padding: 0 10%;
-}
-
-.container__box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 body {
     margin: 0px;
     background: hsl(0, 100%, 74%) ;
-    
 }
+.container {
+    width: 100vw; /* tirar */
+    height: 100vh; 
+    display: flex;
+    justify-content: center;  /* justify-content: space-evenly */;
+    align-items: center; /* tirar */
+    background-image: url("images/bg-intro-desktop.png");
+}
+
+.container__box {
+    width: 100%;
+    /* min-width: 1440px; */
+    height: 50%;
+    max-width: 1440px;
+    display: flex;
+    gap: 5%;
+    justify-content: space-evenly; /* center */
+    align-items: center; /* tirar */
+    padding: 0 10%; /* margin: 0 10%; */
+}
+
 /* ------------------------------------------------ */
 /* Left Box --------------------------------------- */
 .box__left {
-    width: 45%;
-    height: 100%;
+    width: 45%; /* 35% */
+    height: 100%; /* tirar */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items:center;
+    gap: 5%;
     color: #f5f5f5;
 }
 
 .box__left h1 {
-    margin-bottom: 5%;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -52,17 +56,17 @@ body {
 /* ------------------------------------------------ */
 /* Right box -------------------------------------- */
 .box__right {
-    width: 45%;
-    height: 100%;
+    width: 45%; /* 35% */
+    height: 100%; /* tirar */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
 }
 
 .form__wraper {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .form__header {
