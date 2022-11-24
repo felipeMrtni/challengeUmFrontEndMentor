@@ -146,7 +146,7 @@ body {
         padding: 0;
     }
     .container {
-        height: 100vh;
+        height: 100%;
         padding: 5rem 0;
         max-height: 100%;
     }
@@ -209,7 +209,8 @@ body {
         
     }
     .container {
-        /* padding: 5rem 0; */
+        /* height: 100%;
+        padding: 5rem 0; */
     }
 
     .container__box {
@@ -257,3 +258,56 @@ body {
 
     }    
 }
+/* lower than 515 px ----------------------------------------- */
+@media (max-width:515px){
+    body {
+        
+    }
+    .container {
+        /* padding: 5rem 0; */
+    }
+
+    .container__box {
+        padding: 0 1.5rem;
+    }
+    /* ------------------------------------------------------------ */
+    .box__left {
+        width: 100%;
+    }
+
+    .box__left h1 {
+
+    }
+
+    .box__left p{
+
+    }
+    /* ------------------------------------------------------- */
+    .box__right {
+        width: 100%;
+    }
+
+    .form__header {
+
+    }
+
+    .form__header h2 {
+        padding-inline: 3rem;
+    }
+
+    .form {
+       /* height: 100%; */
+    }
+
+    .form input {
+
+    }
+    .form button {
+
+    }
+
+    .form h3 {
+
+    }    
+}
+
