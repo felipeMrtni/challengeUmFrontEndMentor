@@ -11,11 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5rem;
 }
 .container {
     width: 100vw;
     max-width: 1440px;
-    height: 900px; 
+    height: 100vh; 
     background: hsl(0deg 100% 52% / 55%);
 }
 
@@ -55,18 +56,19 @@ body {
 /* Right box -------------------------------------- */
 .box__right {
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     padding-right: 10%;
     margin-left: 1rem;
 }
 
 .form__header {
-    height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding: 5rem 0;
 }
 
 .form__header h2 {
@@ -90,7 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 0 hsla(0, 29%, 30%, 0.336);
     margin-top: 0.75rem;
@@ -139,8 +141,10 @@ body {
 @media (max-width:900px){
     body {
         height: 100%;
+        padding: 0;
     }
     .container {
+        height: auto;
         padding: 5rem 0;
     }
 
@@ -178,7 +182,6 @@ body {
     }
 
     .form__header h2 {
-        height: 100%;
         padding: 1rem;
     }
 
