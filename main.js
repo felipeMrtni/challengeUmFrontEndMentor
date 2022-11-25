@@ -5,23 +5,23 @@ function checkForm(){
         //if true, call function showError and sends the class element and the html message
         showError("firstname__error", "First Name cannot be empty");
         showIconError("firstname__icon");
-        //return false to prevent submition
-        return false;
+        // return false to prevent submition if wanted
+        // return false;
     }
     if(form.lastname.value ===""){
         showError("lastname__error", "Last Name cannot be empty")
         showIconError("lastname__icon");
-        return false;
+        // return false;
     }
     if(form.email.value ===""){
         showError("email__error", "Email cannot be empty")
         showIconError("email__icon");
-        return false;
+        // return false;
     }
     if(form.password.value ===""){
         showError("password__error", "passowrd cannot be empty")
         showIconError("password__icon");
-        return false;
+        // return false;
     }
 }
 
@@ -50,7 +50,6 @@ function clearError(){
     }
 }
 
-
 //get the form class="form" from HTML
 let form = document.forms['sign_up_form'];
 
@@ -61,3 +60,4 @@ form.onsubmit = function(event) {
     clearError();
     checkForm()
 }
+
