@@ -114,8 +114,25 @@ body {
     outline: none;
     border: solid 1px hsl(246, 23%, 48%);
 }
+/* error msgs ----------------------------- */
+.error {
+    display: none;
+    /* visibility: hidden; */
+    /* height: 1rem;
+    width: 10rem; */
+    align-self: flex-end;
+    text-align: end;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: hsl(0deg 100% 52% / 55%);
+}
 
-.form button {
+.error.display__error{
+    display: block;
+}
+
+
+.submit__button {
     background: hsl(154, 59%, 51%);
     width: 100%;
     font-size: 1rem;
@@ -125,6 +142,11 @@ body {
     margin: 1rem;
     border: none;
     border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.submit__button:active {
+    background: black;
 }
 
 .form h3 {
@@ -137,6 +159,7 @@ body {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
 }
+
 
 /* ------------------------------------------------ */
 /* mobile responsive ----------------------------- */
