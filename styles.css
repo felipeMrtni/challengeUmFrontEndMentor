@@ -108,7 +108,7 @@ body {
     position: relative;
 }
 
-.form input {
+.inputarea {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
@@ -119,7 +119,7 @@ body {
     position: relative;
 }
 
-.form input:focus {
+.inputarea:focus {
     outline: none;
     border: solid 1px hsl(246, 23%, 48%);
 }
@@ -152,6 +152,11 @@ body {
     display: block;
 }
 
+.inputarea.display__border {
+    border: solid 1px hsl(0deg 100% 52% / 55%);
+}
+
+/* ------------------------------------------------------------ */
 
 .submit__button {
     background: hsl(154, 59%, 51%);
