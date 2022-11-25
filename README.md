@@ -1,7 +1,7 @@
 # Frontend Mentor - Intro component with sign up form
 
 ![Design preview for the Intro component with sign up form coding challenge] 
-./images/screenshot.jpg
+https://github.com/felipeMrtni/challengeUmFrontEndMentor/issues/1#issue-1464958964
 
 - [Overview] 
   - [The challenge] 
