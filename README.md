@@ -1,6 +1,7 @@
 # Frontend Mentor - Intro component with sign up form
 
-![Design preview for the Intro component with sign up form coding challenge](./images/screenshot.jpg)
+![Design preview for the Intro component with sign up form coding challenge] 
+./images/screenshot.jpg
 
 - [Overview] 
   - [The challenge] 
@@ -13,7 +14,7 @@
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
-  (./design/desktop-preview.jpg)
+  ./design/desktop-preview.jpg
 
   - I used HTML CSS and JavaScript to complete the challenge.
 
