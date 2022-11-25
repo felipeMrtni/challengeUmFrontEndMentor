@@ -138,9 +138,6 @@ body {
 
 .error {
     display: none;
-    /* visibility: hidden; */
-    /* height: 1rem;
-    width: 10rem; */
     align-self: flex-end;
     text-align: end;
     font-size: 0.7rem;
@@ -157,7 +154,6 @@ body {
 }
 
 /* ------------------------------------------------------------ */
-
 .submit__button {
     background: hsl(154, 59%, 51%);
     width: 100%;
@@ -169,10 +165,15 @@ body {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit__button:hover {
+    background: hsl(154, 59%, 66%);
 }
 
 .submit__button:active {
-    background: black;
+    background: hsl(154, 59%, 46%);
 }
 
 .form h3 {
@@ -213,14 +214,6 @@ body {
         margin-right: 0;
         margin-bottom: 2rem;
     }
-
-    .box__left h1 {
-
-    }
-
-    .box__left p{
-
-    }
     /* ------------------------------------------------------- */
     .box__right {
         width: 70%;
@@ -236,86 +229,23 @@ body {
     .form__header h2 {
         padding: 1rem;
     }
-
-    .form {
-       /* height: 100%; */
-    }
-
-    .form input {
-
-    }
-    .form button {
-
-    }
-
-    .form h3 {
-
-    }    
 }
 /* lower than 650 px --------------------------------------- */
 @media (max-width:650px){
-    body {
-        
-    }
-    .container {
-        /* height: 100%;
-        padding: 5rem 0; */
-    }
 
-    .container__box {
-        
-    }
     /* ------------------------------------------------------------ */
     .box__left {
         width: 80%;
         text-align: center;
         padding: 0;
     }
-
-    .box__left h1 {
-
-    }
-
-    .box__left p{
-
-    }
     /* ------------------------------------------------------- */
     .box__right {
         width: 80%;
     }
-
-    .form__header {
-
-    }
-
-    .form__header h2 {
-
-    }
-
-    .form {
-       /* height: 100%; */
-    }
-
-    .form input {
-
-    }
-    .form button {
-
-    }
-
-    .form h3 {
-
-    }    
 }
 /* lower than 515 px ----------------------------------------- */
 @media (max-width:515px){
-    body {
-        
-    }
-    .container {
-        /* padding: 5rem 0; */
-    }
-
     .container__box {
         padding: 0 1.5rem;
     }
@@ -323,40 +253,13 @@ body {
     .box__left {
         width: 100%;
     }
-
-    .box__left h1 {
-
-    }
-
-    .box__left p{
-
-    }
     /* ------------------------------------------------------- */
     .box__right {
         width: 100%;
     }
-
-    .form__header {
-
-    }
-
     .form__header h2 {
         padding-inline: 3rem;
     }
 
-    .form {
-       /* height: 100%; */
-    }
-
-    .form input {
-
-    }
-    .form button {
-
-    }
-
-    .form h3 {
-
-    }    
 }
 
