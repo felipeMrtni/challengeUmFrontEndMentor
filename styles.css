@@ -100,6 +100,14 @@ body {
     margin-top: 0.75rem;
 }
 
+.input__box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
 .form input {
     width: 100%;
     padding: 1rem;
@@ -108,6 +116,7 @@ body {
     border-radius: 0.5rem;
     border: solid 1px hsla(255, 2%, 64%, 0.253);
     margin: 0.5rem auto;
+    position: relative;
 }
 
 .form input:focus {
@@ -115,6 +124,18 @@ body {
     border: solid 1px hsl(246, 23%, 48%);
 }
 /* error msgs ----------------------------- */
+.icon {
+    display: none;
+    position: absolute;
+}
+
+.icon.display__icon {
+    position: absolute;
+    display: block;
+    top: 33%;
+    right: 3%;
+}
+
 .error {
     display: none;
     /* visibility: hidden; */

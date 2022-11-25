@@ -1,9 +1,16 @@
 
 function showError (errorElement, errorMessage){
+    let warnings = document.querySelector("."+errorElement);
     //adds class "display__error" to element "error+(errorElement)"
-    document.querySelector("."+errorElement).classList.add("display__error")
+    warnings.classList.add("display__error")
     //adds the text message in the html <span class="error+(errorElement)">(errorMessage)<span>
-    document.querySelector("."+errorElement).innerHTML = errorMessage;
+    warnings.innerHTML = errorMessage;
+}
+
+function showIconError (iconElement) {
+    let icons = document.querySelector("."+iconElement);
+    icons.classList.add("display__icon")
+
 }
 
 function clearError(){
@@ -19,14 +26,15 @@ let form = document.forms['sign_up_form'];
 
 form.onsubmit = function(event) {
 
-    
+    event.preventDefault();
 
     clearError();
 
     //checks if firstname.value of the form is empty
     if(form.firstname.value ===""){
         //if true, call function showError and sends the class element and the html message
-        showError("firstname__error", "First Name cannot be empty")
+        showError("firstname__error", "First Name cannot be empty");
+        showIconError("firstname__icon");
         //return false to prevent submition
         return false;
     }
@@ -43,5 +51,5 @@ form.onsubmit = function(event) {
         return false;
     }
 
-    event.preventDefault();
+    
 }
